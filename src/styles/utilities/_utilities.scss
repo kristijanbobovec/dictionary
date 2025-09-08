@@ -1,0 +1,23 @@
+/*
+*
+*   Utilities
+*
+*/
+
+// Font families
+.u-font-sans-serif {
+  font-family: var(--font-sans-serif);
+}
+.u-font-serif {
+  font-family: var(--font-serif);
+}
+.u-font-mono {
+  font-family: var(--font-mono);
+}
+
+// Dividers
+.u-vertical-divider {
+  align-self: stretch;
+  inline-size: 1px;
+  background-color: var(--clr-tertiary);
+}

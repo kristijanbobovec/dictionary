@@ -1,0 +1,110 @@
+/*
+*
+* Variables
+*
+*/
+@use "../abstracts" as a;
+
+:root {
+  // Colors
+  --clr-primary: #{a.$clr-primary};
+  --clr-secondary: #{a.$clr-secondary};
+  --clr-tertiary: #{a.$clr-neutral-200};
+  --clr-bg: #{a.$clr-neutral-0};
+
+  --clr-accent: #{a.$clr-accent-500};
+  --clr-accent: #{a.$clr-accent-400};
+
+  --clr-neutral-900: #{a.$clr-neutral-900};
+  --clr-neutral-800: #{a.$clr-neutral-800};
+  --clr-neutral-700: #{a.$clr-neutral-700};
+  --clr-neutral-200: #{a.$clr-neutral-200};
+  --clr-neutral-100: #{a.$clr-neutral-100};
+  --clr-neutral-0: #{a.$clr-neutral-0};
+
+  --clr-dropdown: #{a.$clr-neutral-0};
+
+  // Fonts
+  --font-primary: #{a.$font-sans-serif};
+
+  // Font sizes
+  --heading-l: #{a.$fs-800};
+  --heading-m: #{a.$fs-300};
+  --heading-s: #{a.$fs-250};
+  --body-m: #{a.$fs-225};
+  --body-s: #{a.$fs-175};
+
+  // Font decoration
+  --font-decoration: #{a.$decoration-underline};
+
+  // Font families
+  --font-sans-serif: #{a.$font-sans-serif};
+  --font-serif: #{a.$font-serif};
+  --font-mono: #{a.$font-mono};
+
+  // Font weights
+  --fw-bold: #{a.$fw-700};
+  --fw-regular: #{a.$fw-400};
+
+  // Container size
+  --container-size: #{a.$container-size};
+
+  //Spacings
+  --spacing-700: #{a.$spacing-700};
+  --spacing-600: #{a.$spacing-600};
+  --spacing-500: #{a.$spacing-500};
+  --spacing-400: #{a.$spacing-400};
+  --spacing-300: #{a.$spacing-300};
+  --spacing-200: #{a.$spacing-200};
+  --spacing-100: #{a.$spacing-100};
+  --spacing-025: #{a.$spacing-025};
+
+  // Radiuses
+  --radius-300: #{a.$radius-300};
+  --radius-200: #{a.$radius-200};
+  --radius-100: #{a.$radius-100};
+
+  // Shadows
+  --dropdown-shadow: #{a.$box-shadow-black};
+
+  // Transitions
+  --transition-primary: #{a.$transition-primary};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-primary: #{a.$clr-neutral-0};
+    --clr-secondary: #{a.$clr-secondary};
+    --clr-tertiary: #{a.$clr-neutral-700};
+    --clr-bg: #{a.$clr-neutral-900};
+    --clr-dropdown: #{a.$clr-neutral-800};
+    --dropdown-shadow: #{a.$box-shadow-accent};
+  }
+}
+
+:root[data-theme="light"] {
+  --clr-primary: #{a.$clr-primary};
+  --clr-secondary: #{a.$clr-secondary};
+  --clr-tertiary: #{a.$clr-neutral-200};
+  --clr-bg: #{a.$clr-neutral-0};
+  --clr-dropdown: #{a.$clr-neutral-0};
+  --dropdown-shadow: #{a.$box-shadow-black};
+}
+
+:root[data-theme="dark"] {
+  --clr-primary: #{a.$clr-neutral-0};
+  --clr-secondary: #{a.$clr-secondary};
+  --clr-tertiary: #{a.$clr-neutral-700};
+  --clr-bg: #{a.$clr-neutral-900};
+  --clr-dropdown: #{a.$clr-neutral-800};
+  --dropdown-shadow: #{a.$box-shadow-accent};
+}
+
+:root[data-font="serif"] {
+  --font-primary: #{a.$font-serif};
+}
+
+:root[data-font="mono"] {
+  --font-primary: #{a.$font-mono};
+  --font-decoration: #{a.$decoration-none};
+}

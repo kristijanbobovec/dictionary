@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="/src/styles/main.scss" />
@@ -12,5 +20,75 @@
 
     <title>Dictionary</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <svg><use href="#icon-logo" /></svg>
+        </div>
+
+        <div
+          role="toolbar"
+          aria-label="Change your theme and fonts"
+          class="header__controls"
+        >
+          <div class="dropdown">
+            <button
+              class="text-preset-4--bold dropdown__button"
+              aria-expanded="false"
+              aria-controls="font-select"
+              id="font-selector-button"
+            >
+              Sans Serif
+              <span class="dropdown__icon" aria-hidden="true"
+                ><svg><use href="#icon-arrow-down" /></svg
+              ></span>
+            </button>
+            <ul
+              class="dropdown__menu"
+              role="listbox"
+              aria-labelledby="font-selector-button"
+              id="font-select"
+            >
+              <li
+                role="option"
+                class="u-font-sans-serif dropdown__menu-item dropdown__menu-item--active"
+              >
+                Sans Serif
+              </li>
+              <li role="option" class="u-font-serif dropdown__menu-item">
+                Serif
+              </li>
+              <li role="option" class="u-font-mono dropdown__menu-item">
+                Mono
+              </li>
+            </ul>
+          </div>
+
+          <div class="u-vertical-divider" aria-hidden="true"></div>
+
+          <div class="toggle-switch">
+            <label class="toggle-switch__button">
+              <input type="checkbox" name="theme" id="theme" />
+            </label>
+
+            <div class="toggle-switch__icon" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <form class="header__form">
+          <label class="search-bar">
+            <input
+              class="search-bar__input"
+              type="search"
+              placeholder="Search for any word…"
+            />
+            <span class="search-bar__icon">
+              <svg><use href="#icon-search" /></svg>
+            </span>
+          </label>
+        </form>
+      </header>
+    </div>
+  </body>
 </html>

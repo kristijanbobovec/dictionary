@@ -1,0 +1,17 @@
+/*
+*
+* Search-bar
+*
+*/
+@use "../abstracts/" as a;
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: red;
+
+  &__icon {
+    inline-size: a.rem(16px);
+    aspect-ratio: 1;
+  }
+}

@@ -1,0 +1,35 @@
+/*
+*
+* Header
+*
+*/
+@use "../abstracts/" as a;
+.header {
+  margin-top: var(--spacing-700);
+
+  display: grid;
+  grid-template-columns: minmax(a.rem(24px), a.rem(32px)) 1fr;
+
+  align-items: center;
+
+  column-gap: var(--spacing-200);
+  row-gap: var(--spacing-600);
+
+  &__logo {
+    svg {
+      aspect-ratio: 1;
+    }
+  }
+
+  &__controls {
+    margin-inline-start: auto;
+
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-300);
+  }
+
+  &__form {
+    grid-column: 1 / -1;
+  }
+}

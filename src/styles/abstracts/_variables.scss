@@ -1,0 +1,67 @@
+/*
+*
+*   Variables
+*
+*/
+@use "./functions" as f;
+
+// Colors
+$clr-primary: #2d2d2d;
+$clr-secondary: #757575;
+
+$clr-accent-500: #8f19e8;
+$clr-accent-400: #a445ed;
+
+$clr-neutral-900: #050505;
+$clr-neutral-800: #1f1f1f;
+$clr-neutral-700: #3a3a3a;
+$clr-neutral-200: #e9e9e9;
+$clr-neutral-100: #f4f4f4;
+$clr-neutral-0: #fff;
+
+$clr-red: #ff5252;
+
+// Fonts
+$font-sans-serif: "Inter", sans-serif;
+$font-serif: "Lora", serif;
+$font-mono: "Inconsolata", monospace;
+
+// Font decoration
+$decoration-underline: underline;
+$decoration-none: none;
+
+// Font sizes
+$fs-800: clamp(2rem, 1.296rem + 3.005vw, 4rem);
+$fs-300: clamp(1.125rem, 0.993rem + 0.563vw, 1.5rem);
+$fs-250: clamp(1rem, 0.912rem + 0.376vw, 1.25rem);
+$fs-225: clamp(0.938rem, 0.871rem + 0.282vw, 1.125rem);
+$fs-175: f.rem(14px);
+
+// Font weights
+$fw-700: 700;
+$fw-400: 400;
+
+// Container size
+$container-size: f.rem(737px);
+
+// Spacings
+$spacing-700: clamp(1.5rem, 0.796rem + 3.005vw, 3.5rem);
+$spacing-600: clamp(1.5rem, 0.972rem + 2.254vw, 3rem);
+$spacing-500: clamp(2rem, 1.824rem + 0.751vw, 2.5rem);
+$spacing-400: f.rem(32px);
+$spacing-300: clamp(1rem, 0.824rem + 0.751vw, 1.5rem);
+$spacing-200: clamp(0.5rem, 0.324rem + 0.751vw, 1rem);
+$spacing-100: f.rem(8px);
+$spacing-025: f.rem(2px);
+
+//Radiuses
+$radius-300: f.rem(24px);
+$radius-200: f.rem(16px);
+$radius-100: f.rem(8px);
+
+// Box shadows
+$box-shadow-black: 0 f.rem(5px) f.rem(30px) rgba(#000, 0.1);
+$box-shadow-accent: 0 f.rem(5px) f.rem(30px) $clr-accent-400;
+
+// Transitions
+$transition-primary: 0.2s ease-in-out;

@@ -1,0 +1,16 @@
+/*
+*
+*   Functions
+*
+*/
+$base-size: 16px;
+
+// rem - function for converting px to rem.
+@function rem($size) {
+  @return calc($size / $base-size) * 1rem;
+}
+
+// em - function for converting px to em.
+@function em($size) {
+  @return calc($size / 16px) * 1em;
+}

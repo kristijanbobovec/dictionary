@@ -1,0 +1,13 @@
+/*
+*
+* Layout
+*
+*/
+@use "../abstracts/" as a;
+
+.container {
+  max-inline-size: calc(var(--container-size) + var(--spacing-300));
+  padding-inline: var(--spacing-300);
+  inline-size: 100%;
+  margin-inline: auto;
+}

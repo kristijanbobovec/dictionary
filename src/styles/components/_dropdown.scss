@@ -1,0 +1,75 @@
+/*
+*
+* Dropdown
+*
+*/
+@use "../abstracts/" as a;
+
+.dropdown {
+  position: relative;
+  &__button {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-200);
+
+    padding: var(--spacing-025);
+  }
+
+  &__icon {
+    inline-size: a.rem(12px);
+
+    svg {
+      aspect-ratio: 1;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    position: absolute;
+
+    border-radius: var(--radius-200);
+
+    inline-size: 150%;
+
+    inset-inline-start: -20%;
+    inset-block-start: calc(100% + var(--spacing-200));
+
+    background-color: var(--clr-dropdown);
+    box-shadow: var(--dropdown-shadow);
+
+    padding-block: var(--spacing-200);
+    padding-inline: var(--spacing-300);
+
+    display: none;
+    flex-direction: column;
+    gap: var(--spacing-200);
+  }
+
+  &__menu--active {
+    display: flex;
+  }
+
+  &__menu-item--active {
+    font-weight: var(--fw-bold);
+  }
+
+  &__menu-item {
+    cursor: pointer;
+    transition: color var(--transition-primary);
+  }
+
+  &__menu-item:hover {
+    color: var(--clr-accent);
+  }
+
+  &__menu-item--active:hover {
+    color: var(--clr-primary);
+    cursor: default;
+  }
+}
