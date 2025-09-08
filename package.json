@@ -1,0 +1,17 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "dev-host": "vite --host",
+    "preview": "vite preview"
+  },
+  "author": "Kristijan Bobovec",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.92.1",
+    "vite": "^7.1.5"
+  }
+}
