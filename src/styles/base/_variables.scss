@@ -24,6 +24,10 @@
 
   --clr-dropdown: #{a.$clr-neutral-0};
 
+  --clr-search-bar: #{a.$clr-neutral-100};
+
+  --clr-error: #{a.$clr-red};
+
   // Fonts
   --font-primary: #{a.$font-sans-serif};
 
@@ -62,6 +66,7 @@
   // Radiuses
   --radius-300: #{a.$radius-300};
   --radius-200: #{a.$radius-200};
+  --radius-125: #{a.$radius-125};
   --radius-100: #{a.$radius-100};
 
   // Shadows
@@ -69,6 +74,9 @@
 
   // Transitions
   --transition-primary: #{a.$transition-primary};
+
+  // Focus outlines
+  --focus-primary: #{a.$focus-primary};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,6 +87,7 @@
     --clr-bg: #{a.$clr-neutral-900};
     --clr-dropdown: #{a.$clr-neutral-800};
     --dropdown-shadow: #{a.$box-shadow-accent};
+    --clr-search-bar: #{a.$clr-neutral-800};
   }
 }
 
@@ -89,6 +98,7 @@
   --clr-bg: #{a.$clr-neutral-0};
   --clr-dropdown: #{a.$clr-neutral-0};
   --dropdown-shadow: #{a.$box-shadow-black};
+  --clr-search-bar: #{a.$clr-neutral-100};
 }
 
 :root[data-theme="dark"] {
@@ -98,6 +108,7 @@
   --clr-bg: #{a.$clr-neutral-900};
   --clr-dropdown: #{a.$clr-neutral-800};
   --dropdown-shadow: #{a.$box-shadow-accent};
+  --clr-search-bar: #{a.$clr-neutral-800};
 }
 
 :root[data-font="serif"] {

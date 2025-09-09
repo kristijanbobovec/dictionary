@@ -57,6 +57,7 @@ $spacing-025: f.rem(2px);
 //Radiuses
 $radius-300: f.rem(24px);
 $radius-200: f.rem(16px);
+$radius-125: f.rem(10px);
 $radius-100: f.rem(8px);
 
 // Box shadows
@@ -65,3 +66,6 @@ $box-shadow-accent: 0 f.rem(5px) f.rem(30px) $clr-accent-400;
 
 // Transitions
 $transition-primary: 0.2s ease-in-out;
+
+// Focus outlines
+$focus-primary: 0 0 0 2px var(--clr-bg), 0 0 0 3px var(--clr-accent);

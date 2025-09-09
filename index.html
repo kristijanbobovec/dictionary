@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,7 +72,9 @@
               <input type="checkbox" name="theme" id="theme" />
             </label>
 
-            <div class="toggle-switch__icon" aria-hidden="true"></div>
+            <div class="toggle-switch__icon" aria-hidden="true">
+              <svg><use href="#icon-moon" /></svg>
+            </div>
           </div>
         </div>
 
@@ -80,12 +82,13 @@
           <label class="search-bar">
             <input
               class="search-bar__input"
-              type="search"
+              type="text"
               placeholder="Search for any word…"
             />
-            <span class="search-bar__icon">
+            <button type="submit" class="search-bar__icon">
               <svg><use href="#icon-search" /></svg>
-            </span>
+            </button>
+            <p class="search-bar__error">Whoops, can't be empty…</p>
           </label>
         </form>
       </header>
