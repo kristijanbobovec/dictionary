@@ -1,0 +1,42 @@
+/*
+*
+* Main header
+*
+*/
+@use "../abstracts/" as a;
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    inline-size: clamp(3rem, 2.406rem + 2.535vw, 4.688rem);
+
+    border-radius: 50%;
+
+    transition: box-shadow var(--transition-primary);
+
+    svg {
+      aspect-ratio: 1;
+    }
+  }
+
+  &__button:focus {
+    outline: none;
+  }
+
+  &__button:focus-visible {
+    box-shadow: var(--focus-primary);
+  }
+}

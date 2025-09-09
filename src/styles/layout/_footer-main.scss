@@ -1,0 +1,33 @@
+/*
+*
+* Footer main
+*
+*/
+@use "../abstracts/" as a;
+
+.footer-main {
+  border-top: 1px solid var(--clr-tertiary);
+  padding-block: var(--spacing-300);
+  display: flex;
+  gap: var(--spacing-200);
+  flex-wrap: wrap;
+
+  &__link {
+    flex-shrink: 0;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    display: flex;
+    gap: var(--spacing-100);
+  }
+
+  &__link::after {
+    content: url("../../assets/icons/window.svg");
+    inline-size: a.rem(12px);
+    aspect-ratio: 1;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+}

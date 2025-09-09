@@ -69,3 +69,6 @@ $transition-primary: 0.2s ease-in-out;
 
 // Focus outlines
 $focus-primary: 0 0 0 2px var(--clr-bg), 0 0 0 3px var(--clr-accent);
+
+// Animations
+$loader-animation: loader infinite 1s alternate;

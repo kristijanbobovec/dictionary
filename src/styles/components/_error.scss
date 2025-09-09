@@ -1,0 +1,18 @@
+/*
+*
+* Error
+*
+*/
+@use "../abstracts/" as a;
+
+.error {
+  margin-top: var(--spacing-700);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+
+  &__emoji {
+    font-size: a.rem(64px);
+  }
+}

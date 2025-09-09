@@ -15,6 +15,20 @@
   font-family: var(--font-mono);
 }
 
+// Colors
+.u-clr-accent {
+  color: var(--clr-accent);
+}
+
+.u-clr-secondary {
+  color: var(--clr-secondary);
+}
+
+// Font weight
+.u-fw-bold {
+  font-weight: var(--fw-bold);
+}
+
 // Dividers
 .u-vertical-divider {
   align-self: stretch;

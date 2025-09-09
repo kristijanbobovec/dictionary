@@ -1,0 +1,26 @@
+/*
+*
+* Synonyms
+*
+*/
+@use "../abstracts/" as a;
+
+.synonyms {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-100);
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+}

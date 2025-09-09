@@ -1,0 +1,35 @@
+/*
+*
+* Section
+*
+*/
+@use "../abstracts/" as a;
+
+.section {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-500);
+  }
+
+  &__header {
+    position: relative;
+    margin-block-end: var(--spacing-500);
+  }
+
+  &__heading {
+    font-style: italic;
+  }
+
+  &__heading::after {
+    content: "";
+    position: absolute;
+    inline-size: calc(95% - 4ch);
+    block-size: 1px;
+    background-color: var(--clr-tertiary);
+
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+    transform: translateY(-50%);
+  }
+}

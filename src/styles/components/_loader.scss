@@ -1,0 +1,15 @@
+/*
+*
+* Loader
+*
+*/
+@use "../abstracts/" as a;
+
+.loader {
+  margin-top: var(--spacing-700);
+  text-align: center;
+
+  p {
+    animation: var(--loader-animation);
+  }
+}

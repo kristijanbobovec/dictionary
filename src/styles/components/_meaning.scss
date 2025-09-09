@@ -1,0 +1,43 @@
+/*
+*
+* Meaning
+*
+*/
+@use "../abstracts/" as a;
+
+.meaning {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+  }
+
+  &__item {
+    padding-inline-start: var(--spacing-600);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+  }
+
+  &__header {
+    position: relative;
+  }
+
+  &__header::before {
+    content: "";
+    position: absolute;
+    inline-size: a.rem(5px);
+    aspect-ratio: 1;
+    background-color: var(--clr-accent);
+    border-radius: 50%;
+
+    inset-block-start: a.rem(10px);
+
+    inset-inline-start: calc(var(--spacing-300) * -1);
+  }
+}

@@ -1,0 +1,13 @@
+/*
+*
+* Main
+*
+*/
+@use "../abstracts/" as a;
+
+.main {
+  margin-block-start: var(--spacing-500);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
+}

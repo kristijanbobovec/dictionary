@@ -45,6 +45,8 @@
     list-style: none;
     position: absolute;
 
+    z-index: 1;
+
     border-radius: var(--radius-200);
 
     inline-size: 150%;
@@ -60,7 +62,7 @@
 
     display: none;
     flex-direction: column;
-    gap: var(--spacing-200);
+    gap: var(--spacing-100);
   }
 
   &__menu--active {
@@ -74,6 +76,7 @@
   &__menu-item {
     cursor: pointer;
     transition: color var(--transition-primary);
+    padding: var(--spacing-100);
   }
 
   &__menu-item:hover {

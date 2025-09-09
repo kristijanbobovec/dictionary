@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +24,10 @@
     <div class="container">
       <header class="header">
         <div class="header__logo">
-          <svg><use href="#icon-logo" /></svg>
+          <svg role="img">
+            <title>Dictionary logo</title>
+            <use href="#icon-logo" />
+          </svg>
         </div>
 
         <div
@@ -68,7 +71,7 @@
           <div class="u-vertical-divider" aria-hidden="true"></div>
 
           <div class="toggle-switch">
-            <label class="toggle-switch__button">
+            <label class="toggle-switch__button" aria-label="Change theme">
               <input type="checkbox" name="theme" id="theme" />
             </label>
 
@@ -85,13 +88,137 @@
               type="text"
               placeholder="Search for any word…"
             />
-            <button type="submit" class="search-bar__icon">
-              <svg><use href="#icon-search" /></svg>
+            <button
+              type="submit"
+              class="search-bar__icon"
+              aria-label="Search for word"
+            >
+              <svg aria-hidden="true"><use href="#icon-search" /></svg>
             </button>
             <p class="search-bar__error">Whoops, can't be empty…</p>
           </label>
         </form>
       </header>
+
+      <main class="main">
+        <!-- <section class="error">
+          <p class="error__emoji">😕</p>
+          <p class="text-preset-3 text-preset-3--bold">No Definitions Found</p>
+          <p class="u-clr-secondary">
+            Sorry pal, we couldn't find definitions for the word you were
+            looking for. You can try the search again at later time or head to
+            the web instead.
+          </p>
+        </section> -->
+
+        <!-- <section class="loader">
+          <p class="text-preset-3 text-preset-3--bold">Loading content...</p>
+        </section> -->
+
+        <header class="header-main">
+          <div class="header-main__details">
+            <h1 class="text-preset-1">keyboard</h1>
+            <p class="text-preset-2 u-clr-accent">/ˈkiːbɔːd/</p>
+          </div>
+          <button
+            type="button"
+            class="header-main__button"
+            aria-label="Play pronunciation"
+          >
+            <svg aria-hidden="true"><use href="#icon-play" /></svg>
+          </button>
+        </header>
+
+        <section class="section">
+          <header class="section__header">
+            <h2 class="section__heading text-preset-2 text-preset-2--bold">
+              noun
+            </h2>
+          </header>
+
+          <div class="section__content">
+            <div class="meaning">
+              <h3 class="text-preset-3 u-clr-secondary">Meaning</h3>
+              <ul class="meaning__list">
+                <li class="meaning__item">
+                  <p class="meaning__header">
+                    (etc.) A set of keys used to operate a typewriter, computer
+                    etc.
+                  </p>
+                </li>
+                <li class="meaning__item">
+                  <p class="meaning__header">
+                    A component of many instruments including the piano, organ,
+                    and harpsichord consisting of usually black and white keys
+                    that cause different tones to be produced when struck.
+                  </p>
+                </li>
+                <li class="meaning__item">
+                  <p class="meaning__header">
+                    A device with keys of a musical keyboard, used to control
+                    electronic sound-producing devices which may be built into
+                    or separate from the keyboard device.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="synonyms">
+              <h3 class="text-preset-3 u-clr-secondary">Synonyms</h3>
+              <ul class="synonyms__list">
+                <li class="synonyms__item">
+                  <a href="" class="synonyms__link u-clr-accent u-fw-bold"
+                    >krešidar</a
+                  >
+                </li>
+                <li class="synonyms__item">
+                  <a href="" class="synonyms__link u-clr-accent u-fw-bold"
+                    >peder</a
+                  >
+                </li>
+                <li class="synonyms__item">
+                  <a href="" class="synonyms__link u-clr-accent u-fw-bold"
+                    >bauljić</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <header class="section__header">
+            <h2 class="section__heading text-preset-2 text-preset-2--bold">
+              verb
+            </h2>
+          </header>
+
+          <div class="section__content">
+            <div class="meaning">
+              <h3 class="text-preset-3 u-clr-secondary">Meaning</h3>
+              <ul class="meaning__list">
+                <li class="meaning__item">
+                  <p class="meaning__header">To type on a computer keyboard.</p>
+                  <p class="meaning__example u-clr-secondary">
+                    “Keyboarding is the part of this job I hate the most.”
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer-main">
+          <p class="u-clr-secondary">Source</p>
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-main__link"
+            >https://en.wiktionary.org/wiki/keyboard</a
+          >
+        </footer>
+      </main>
     </div>
   </body>
 </html>
