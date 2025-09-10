@@ -4,7 +4,7 @@ import { API_URL } from "./config";
 export const state = {
   search: "",
   currentWord: undefined,
-  font: "sansserif",
+  font: "sans-serif",
   theme: "",
 };
 
@@ -44,5 +44,5 @@ export const updateFont = function (newFont) {
 
 export const loadFont = function () {
   const font = localStorage.getItem("font");
-  state.font = font ? font : "";
+  state.font = font ? font : "sans-serif";
 };

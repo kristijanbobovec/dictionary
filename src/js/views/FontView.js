@@ -4,6 +4,7 @@ class FontView {
   _menu = document.querySelector(".dropdown__menu");
   _options = document.querySelectorAll(".dropdown__menu-item");
   _optionsArray = Array.from(this._options);
+  _activeOption;
 
   init() {
     this._subscribeOpenMenuHandler();
@@ -65,6 +66,7 @@ class FontView {
     this._resetAll();
 
     option.classList.add("dropdown__menu-item--active");
+    this._activeOption = option;
     this._root.dataset.font = value;
   }
 
@@ -83,9 +85,7 @@ class FontView {
       if (!this._menuOpened()) return;
       if (e.code === "Escape") this._toggleMenu();
       if (e.code === "Tab") {
-        console.log("a");
         const focusEl = document.activeElement;
-        console.log(focusEl);
         if (focusEl !== this._toggleButton) this._toggleMenu();
       }
     });
@@ -108,10 +108,7 @@ class FontView {
     this._menu.classList.toggle("dropdown__menu--active");
 
     if (this._menuOpened()) {
-      const activeOption = document.querySelector(
-        ".dropdown__menu-item--active"
-      );
-      activeOption.focus();
+      this._activeOption.focus();
     }
 
     const ariaExpanded = this._toggleButton.getAttribute("aria-expanded");
